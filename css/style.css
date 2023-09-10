@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#main{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  inset: 0;
+  position: absolute;
+  background-color: #e4d2d281;
+}
+#main h4{
+    background-color: rgb(36, 22, 22);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    z-index: 22;
+}
+.container .card{
+  width:fit-content;
+  height: fit-content;
+  margin: auto;
+  color: antiquewhite;
+  padding: 30px;
+  background: #fff;
+  box-shadow:  20px 30px 60px #f8d1d1,
+             -0px -0px 0px #ffffff;
+  
+}
+.container label{
+    font-size: 10px;;
+    color: #000;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container input{
+    width: 230px;
+    padding: 8px;
+    display: block;
+    outline: none;
+    border: 0.1px solid #0000002f;
+    margin: 8px 0 0 0;
+}
+.container small{
+    color: red;
+    font-weight: bold;
+    font-size: 10px;
+    display: none;
+}
+
+.container small.textError{
+    display: block;
+}
+.container input.error{
+    transition: 0.3s ease all;
+    border: 2px solid red;
+}
+.container input:focus{
+    background-color: yellow;
+}
+.container button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top:10px ;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 0px;
+    transition: 0.5s;
+    background-color:rgb(36, 22, 22);
+    color: #fff;
+}
+.container button:hover{
+    background: rgb(207, 131, 44);
+    color: #fff;
+}

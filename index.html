@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section id="main">
+        <div class="container">
+            <h4>Register</h4>
+            <div class="card">
+                <form action="https://www.w3schools.com/" method="get">
+                    <label for="name">enter your name</label>
+                    <input class="name" name="name" type="text" placeholder="enter your name"> 
+                    <small class="name-error">Name Field Is Required.</small> 
+                    <br>
+    
+                    
+                    <label for="email">enter your email</label>
+                    <input class="email" name="email" type="email" placeholder="enter your email"> 
+                    <small class="email-error">Email Field Is Required.</small> 
+                    <br>
+
+                    
+                    <label for="number">enter your number</label>
+                    <input class="number" type="password" type="text" placeholder="enter your number"> 
+                    <small class="pass-error">Password Field Is Required.</small> 
+                    <br>
+
+                    
+                    <label for="con-pass">confirm your password</label>
+                    <input class="con-pass" type="password" placeholder="confirm your password"> 
+                    <small class="con-pass-error">confirm Password Field Is Required.</small> 
+                    <small class="con-pass-error-2">password not match</small> 
+                    <br>
+
+                    <button class="btn" type="">Submit</button>
+    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
