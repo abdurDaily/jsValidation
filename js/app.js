@@ -1,6 +1,7 @@
 let form = document.querySelector('button');
 
 form.addEventListener('click',function(e){
+    e.preventDefault();
     let name = document.querySelector('.name');
     let email = document.querySelector('.email');
     let number = document.querySelector('.number');
@@ -14,28 +15,48 @@ form.addEventListener('click',function(e){
 
     
     if(name.value === ''){
-            e.preventDefault();
             name.classList.add('error');
             nameError.classList.add('textError');
             return false;
+        }else{
+            name.classList.remove('error');
+            nameError.classList.remove('textError');
         }
+
+
+
         if(email.value === ''){
-            e.preventDefault();
             email.classList.add('error');
             emailError.classList.add('textError');
             return false;
+        }else{
+            email.classList.remove('error');
+            emailError.classList.remove('textError');
         }
+
+
+
         if(number.value === ''){
-            e.preventDefault();
             number.classList.add('error');
             passError.classList.add('textError');
             return false;
+        }else{
+            number.classList.remove('error');
+            passError.classList.remove('textError');
         }
-        if(conPassError.value != number.value){
-            e.preventDefault();
-            number.classList.add('error');
+
+
+        if(conPass.value != number.value){
+            conPass.classList.add('error');
             conPassError2.classList.add('textError');
             return false;
         }
+        if(conPass.value === number.value){
+            alert('ok');
+        }else{
+            alert('not ok');
+        }
         return true;
+
+        
 });
